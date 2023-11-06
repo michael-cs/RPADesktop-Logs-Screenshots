@@ -136,6 +136,9 @@ class FakturamaActivities:
                 pg.press('tab')
                 pg.typewrite(phone)
                 print(phone)
+                pg.hotkey('ctrl', 's')
+                pg.hotkey('ctrl', 'w')
+        pg.hotkey('alt', 'F4')
 
     def preenche_ordem():
         if not DesktopTools.inicia_software():
